@@ -1689,40 +1689,72 @@ contact
 .contact-us .info {
   margin-top: 30px;
   position: relative;
-  z-index: 5;
-  display: inline-flex;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-us .info:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us .info h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #2a2a2a;
+  text-align: center;
 }
 
 .contact-us .info span {
-  opacity: 1;
-  display: inline-flex;
-  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+  text-transform: none;
 }
 
 .contact-us .info span i {
-  float: left;
-  width: 46px;
-  height: 46px;
-  display: inline-block;
-  text-align: center;
-  line-height: 46px;
-  background: #03a4ed;
-  background: linear-gradient(105deg, #03a4ed 0%, #0280c2 100%);
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #03a4ed 0%, #0280c2 100%);
   border-radius: 50%;
   color: #fff;
-  font-size: 22px;
-  margin-left: 30px;
+  font-size: 20px;
   margin-right: 15px;
 }
 
 .contact-us .info span a {
-  color: #03a4ed;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 25px;
-  text-transform: none;
+  color: #2a2a2a;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+
 }
 
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .contact-us .info {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact-us .info span {
+    justify-content: center;
+    text-align: center;
+  }
+}
 form#contact {
   margin-left: -100px;
   position: relative;
