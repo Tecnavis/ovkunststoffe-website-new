@@ -52,13 +52,49 @@ https://templatemo.com/tm-565-onix-digital
 }
 
 
+              /* Add this CSS to your stylesheet */
+              .nav li {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 16px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 400px;
+  height: 250px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #ddd;
+}
+
+.nav li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 </style>
   </head>
 
 <body>
 
   <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
+  <!-- <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
       <div class="dots">
@@ -67,7 +103,7 @@ https://templatemo.com/tm-565-onix-digital
         <span></span>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- ***** Preloader End ***** -->
 
   <div class="whatsapp-button">
@@ -90,13 +126,28 @@ https://templatemo.com/tm-565-onix-digital
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-               <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
               <li class="scroll-to-section"><a href="#service">Services</a></li>
-              <li class="scroll-to-section"><a href="#products">Products</a></li>
-              <!-- <li class="scroll-to-section"><a href="#video">Videos</a></li>  -->
-              <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
-              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="tel:+971042996378"><i class="fa fa-phone"></i> Call Now </a></div></li> 
-            </ul>        
+              <li class="scroll-to-section dropdown">
+                <a href="#products">Products</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./product.html#p1">Soundproof Pipe System </a></li>
+                  <li><a href="./product.html#p2">DWC Pipes And Machine Supply </a></li>
+                  <li><a href="./product.html#p3">Plastic Rubber Sealing System </a></li>
+                  <li><a href="./product.html#p4">Specialized Plastic Packaging </a></li>
+                  <li></li>
+                </ul>
+              </li>
+              <!-- <li class="scroll-to-section"><a href="#video">Videos</a></li> -->
+              <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button-hover">
+                  <a href="tel:+971042996378"><i class="fa fa-phone"></i> Call Now </a>
+                </div>
+              </li>
+            </ul>
+            
+            
             <a class='menu-trigger'>
                 <span>Menu</span>
             </a>
@@ -351,7 +402,7 @@ https://templatemo.com/tm-565-onix-digital
             <div class="row">
               <div class="col-lg-10 offset-lg-1">
                 <h2>Why Choose us</h2>
-                <p>At OV Kunststoffe, we pride ourselves on being a trusted leader in the plastic raw materials industry. With years of experience and a commitment to quality, we offer a comprehensive range of high-grade plastic materials tailored to meet the diverse needs of our clients. Our expert team is dedicated to providing exceptional customer service, ensuring timely delivery and competitive pricing. We continually innovate and stay ahead of market trends to deliver sustainable and reliable solutions. Choose us for unparalleled expertise, quality products, and a partnership that drives your success.</p>
+                <p style="color: aliceblue;">At OV Kunststoffe, we pride ourselves on being a trusted leader in the plastic raw materials industry. With years of experience and a commitment to quality, we offer a comprehensive range of high-grade plastic materials tailored to meet the diverse needs of our clients. Our expert team is dedicated to providing exceptional customer service, ensuring timely delivery and competitive pricing. We continually innovate and stay ahead of market trends to deliver sustainable and reliable solutions. Choose us for unparalleled expertise, quality products, and a partnership that drives your success.</p>
                 <!-- <form id="subscribe" action="" method="get">
                   <input type="text" name="website" id="website" placeholder="Your Website URL" required="">
                   <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
@@ -501,6 +552,10 @@ https://templatemo.com/tm-565-onix-digital
                         <!-- &amp;  -->
                         <!-- Case Studies <span>for Clients</span></h2>
                     <span>Our Portfolio</span> -->
+                    <div class="text-center"> <a href="product.html">
+                      <button class="btn btn-primary mt-4">Know More</button>
+                    </a>
+                  </div>
                 </div>
             </div>
         </div>
@@ -646,10 +701,7 @@ https://templatemo.com/tm-565-onix-digital
         </div>
     </div>
 </div>
-<div class="text-center"> <a href="product.html">
-    <button class="btn btn-primary mt-4">Know More</button>
-  </a>
-</div>
+
 
 
  
