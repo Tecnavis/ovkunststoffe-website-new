@@ -57,16 +57,27 @@ https://templatemo.com/tm-565-onix-digital
   position: relative;
 }
 
+/* Add this CSS to your stylesheet */
+.nav li {
+  position: relative;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: white;
-  box-shadow: 0 16px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   width: 400px;
-  height: 250px;
+  height: auto;
+  padding: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .dropdown-menu li {
@@ -75,17 +86,31 @@ https://templatemo.com/tm-565-onix-digital
 }
 
 .dropdown-menu li a {
+  padding-left: 10px;
   color: black;
   text-decoration: none;
   display: block;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown-menu li a:hover {
-  background-color: #ddd;
+  border-radius: 10px;
+  background-color:whitesmoke;
+  color: #333;
 }
 
 .nav li.dropdown:hover .dropdown-menu {
   display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav li.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 </style>
@@ -545,21 +570,21 @@ https://templatemo.com/tm-565-onix-digital
         <img src="assets/images/portfolio-left-dec.png" alt="">
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading">
-                    <h2>Our <em>Products</em>
-                        <!-- &amp;  -->
-                        <!-- Case Studies <span>for Clients</span></h2>
-                    <span>Our Portfolio</span> -->
-                    <div class="text-center"> <a href="product.html">
-                      <button class="btn btn-primary mt-4">Know More</button>
-                    </a>
-                  </div>
+      <div class="row">
+          <div class="col-lg-10 offset-lg-2" style="display: flex;">
+              <div class="section-heading" style="flex: 1;text-align: center;">
+                  <h2>Our <em>Products</em></h2>
+                  <!-- &amp; Case Studies <span>for Clients</span> -->
+                  <!-- <span>Our Portfolio</span> -->
+              </div>
+              
+                <div class="main-blue-button-hover"style="display: flex; height: 50px;">
+                  <a href="./product.html">know more</a>
                 </div>
-            </div>
-        </div>
-    </div>
+           
+          </div>
+      </div>
+  </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
