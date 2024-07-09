@@ -76,55 +76,101 @@ background-color: #ddd;
 .nav li.dropdown:hover .dropdown-menu {
 display: block;
 }
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* background-color: #25d366; */
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures the button stays on top */
+}
+
+.whatsapp-button a img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+
+              /* Add this CSS to your stylesheet */
+              .nav li {
+  position: relative;
+              }
 
 </style>
 </head>
 
 <body>
 
+
+  <div class="whatsapp-button">
+    <a href="https://wa.me/971506556826" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+</div>
+
+
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s" style="z-index: 1000;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/ov-ku.png" style="width: 200px;">
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                          <li class="scroll-to-section"><a href="#about">About</a></li>
-                          <li class="scroll-to-section"><a href="#service">Services</a></li>
-                          <li class="scroll-to-section dropdown">
-                            <a href="#products">Products</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="./product.html#p1">Soundproof Pipe System </a></li>
-                              <li><a href="./product.html#p2">DWC Pipes And Machine Supply </a></li>
-                              <li><a href="./product.html#p3">Plastic Rubber Sealing System </a></li>
-                              <li><a href="./product.html#p4">Specialized Plastic Packaging </a></li>
-                              <li></li>
-                            </ul>
-                          </li>
-                          <!-- <li class="scroll-to-section"><a href="#video">Videos</a></li> -->
-                          <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-                          <li class="scroll-to-section">
-                            <div class="main-red-button-hover">
-                              <a href="tel:+971042996378"><i class="fa fa-phone"></i> Call Now </a>
-                            </div>
-                          </li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/ov-ku.png" style="width: 200px;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="index.html">About</a></li>
+              <li class="scroll-to-section"><a href="service.html">Services</a></li>
+              <li class="scroll-to-section"><a href="brands.html">Brands</a></li>
+
+              <li class="scroll-to-section dropdown">
+                <a href="#products">Products</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./product.html#p1">Soundproof Pipe System </a></li>
+                  <li><a href="./product.html#p2">DWC Pipes And Machine Supply </a></li>
+                  <li><a href="./product.html#p3">Plastic Rubber Sealing System </a></li>
+                  <li><a href="./product.html#p4">Specialized Plastic Packaging </a></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li class="scroll-to-section dropdown">
+                <a href="#products">Contact us</a>
+                <ul class="dropdown-menu">
+                  <li><div style="display: flex;"><img src="./assets/images/logos/india (1).png" alt="" style="height: 30px; width: 35px;"><a href="tel:+00919605750005">00919605750005</a></div></li>
+                  <li> <div style="display: flex;"><img src="./assets/images/logos/dubi.png" alt="" style="height: 25px; width: 25px;"><a href="tel:+0097142996378">0097142996378 </a></div></li>
+                  
+                  <li></li>
+                </ul>
+              </li>
+              <!-- <li class="scroll-to-section"><a href="#video">Videos</a></li> -->
+            
+              <li class="scroll-to-section">
+                <div class="main-red-button-hover">
+                  <a href="tel:+971506556826"><i class="fa fa-phone"></i> Call Now </a>
                 </div>
-            </div>
+              </li>
+            </ul>
+            
+            
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Banner Start ***** -->
@@ -132,8 +178,8 @@ display: block;
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1></h1>
-                    <p>Explore our wide range of innovative plastic solutions  <br> tailored to meet your needs.</p>
+                    <h1>Contact us</h1>
+                    <p>Feel free To contct us  </p>
                 </div>
             </div>
         </div>
@@ -149,28 +195,29 @@ display: block;
             <div class="section-heading">
               <h2>Feel free to <em>Contact</em> us </h2>
               <div id="map">
+                <h2>DUBAI</h2>
                 <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
               </div>
-              <div class="info align-self-center" style="width:600px ;padding: 20px 0 20px 0;">
+              <div class="info align-self-center" style="width:100%; padding: 20px 0 20px 0;">
                 <div>
                   <h2>DUBAI</h2>
                 </div>
                 <div style="display: inline-flex;">
-                <span><i class="fa fa-phone"></i> <a href="#">+971 042 996 378<br>+971 050 655 6826</a></span>
-                <span style="padding-left: 20px;"><i class="fa fa-map-marker"></i> <a href="#">  Post box 77157,<br> Ummul Ramoul , <br>Rashidiya Office No 5,<br> Dubai UAE</a></span>
+                  <span><i class="fa fa-phone"></i> <a href="tel:+971996378">+971 996 378</a></span>
+                  <span style="padding-left: 10px;"><i class="fa fa-phone"></i> <a href="tel:+9716556826">+971 655 6826</a></span>
+                  <span style="padding-left: 20px;"><i class="fa fa-map-marker"></i> <a href="#"> Post box 77157,<br> Ummul Ramoul, <br>Rashidiya Office No 5,<br> Dubai UAE</a></span>
+                </div>
               </div>
-  
-              </div>
-              <div class="info align-self-center" style="width:600px ;padding: 20px 0 20px 0;">
+              <div class="info align-self-center" style="width:100%; padding: 20px 0 20px 0;">
                 <div>
                   <h2>KERALA</h2>
                 </div>
                 <div style="display: inline-flex;">
-                <span><i class="fa fa-phone"></i> <a href="#">+91 960 575 0005<br>+91 954 405 2717</a></span>
-                <span style="padding-left: 20px;"><i class="fa fa-map-marker"></i> <a href="#">V studio Ayyanthole,<br> Trichur 680003<br>Kerala, India</a></span>
+                  <span><i class="fa fa-phone"></i> <a href="tel:+919544052717">+91 954 405 2717</a></span>
+                  <span style="padding-left: 10px;"><i class="fa fa-phone"></i> <a href="tel:+919605750005">+91 960 575 0005</a></span>
+                  <span style="padding-left: 20px;"><i class="fa fa-map-marker"></i> <a href="#">V studio Ayyanthole,<br> Trichur 680003<br>Kerala, India</a></span>
                 </div>
               </div>
-  
             </div>
           </div>
           <div class="col-lg-5 align-self-center">
@@ -208,6 +255,12 @@ display: block;
                 </div>
               </div>
             </form>
+            <!-- New map section starts here -->
+            <div id="new-map" style="width: 100%; padding-top: 20px;">
+              <h2>KERALA</h2>
+              <iframe src="https://maps.google.com/maps?q=Kerala,+India&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+            <!-- New map section ends here -->
           </div>
         </div>
       </div>
@@ -218,10 +271,7 @@ display: block;
         <img src="assets/images/contact-left-dec.png" alt="">
       </div>
     </div>
-
-
-
-
+    
     
     <div class="footer-dec">
       <img src="assets/images/footer-dec.png" alt="">
@@ -317,6 +367,109 @@ display: block;
           }
       });
   </script>
+
+
+<script>
+  $("#form-submit").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbxwx5uJi-6jBAO2sRKR8-3dbK-pX6y3aD4qaEQ_XO_O_bz473DXazrosczF4M5yGfh4/exec",
+          data:$("#form-submit").serialize(),
+          method:"post",
+          success:function (response){
+              // alert("Contact Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
+
+<!-- 
+<div id="contact" class="contact-us section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="section-heading">
+          <h2>Feel free to <em>Contact</em> us </h2>
+          <div id="map">
+            <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          </div>
+          <div class="info align-self-center" style="width:600px ;padding: 20px 0 20px 0;">
+            <div>
+              <h2>DUBAI</h2>
+            </div>
+            <div style="display: inline-flex;">
+            <span><i class="fa fa-phone"></i> <a href="#">+971 042 996 378<br>+971 050 655 6826</a></span>
+            <span style="padding-left: 20px;"><i class="fa fa-map-marker"></i> <a href="#">  Post box 77157,<br> Ummul Ramoul , <br>Rashidiya Office No 5,<br> Dubai UAE</a></span>
+          </div>
+
+          </div>
+          <div class="info align-self-center" style="width:600px ;padding: 20px 0 20px 0;">
+            <div>
+              <h2>KERALA</h2>
+            </div>
+            <div style="display: inline-flex;">
+            <span><i class="fa fa-phone"></i> <a href="#">+91 960 575 0005<br>+91 954 405 2717</a></span>
+            <span style="padding-left: 20px;"><i class="fa fa-map-marker"></i> <a href="#">V studio Ayyanthole,<br> Trichur 680003<br>Kerala, India</a></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-5 align-self-center">
+        <form id="contact" action="" method="get">
+          <div class="row">
+            <div class="col-lg-12">
+              <fieldset>
+                <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+              </fieldset>
+            </div>
+            <div class="col-lg-12"> -->
+              <!-- <fieldset>
+                <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+              </fieldset> -->
+            <!-- </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <input type="text" name="phone" id="phone" placeholder="Your phone number" required="">
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <input type="text" name="message" id="message" placeholder="How we can help you?" required="">
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <button type="submit" id="form-submit" class="main-button">Submit Request</button>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="contact-dec">
+    <img src="assets/images/contact-dec.png" alt="">
+  </div>
+  <div class="contact-left-dec">
+    <img src="assets/images/contact-left-dec.png" alt="">
+  </div>
+</div>
+
+
+ -->

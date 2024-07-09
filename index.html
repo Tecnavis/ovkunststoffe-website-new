@@ -152,6 +152,162 @@ https://templatemo.com/tm-565-onix-digital
         .dropdown-123:hover .dropbtn {
             /* background-color: #3e8e41; */
         }
+
+
+        .dropbtn {
+  color: rgb(16, 16, 204);
+  background-color: aliceblue;
+  border-radius: 20px;
+  border-color: rgb(41, 149, 243);
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold; /* Make text bold */
+  border: 2px solid transparent; /* Ensure button has a border */
+  outline: none; /* Remove default focus styling */
+  position: relative; /* Required for the animation */
+  overflow: hidden; /* Ensure text does not overflow button */
+}
+
+/* Style for the blinking animation */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Apply the blinking animation */
+.blink-button .dropbtn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: blink 2s infinite; /* Adjust animation speed as needed */
+  border-radius: 20px;
+  z-index: 1;
+}
+
+/* Adjust z-index to ensure button text is visible above the animation */
+.blink-button .dropbtn {
+  position: relative;
+  z-index: 2;
+}
+
+
+.phone-link {
+  text-decoration: none; /* Remove underline */
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the jump effect */
+}
+
+.phone-container:hover {
+  transform: translateY(-5px); /* Move container up on hover */
+}
+
+.phone-container i {
+  font-size: 20px; /* Adjust icon size */
+  padding-right: 10px;
+  font-weight: bold; /* Make icon bold */
+}
+
+.phone-container p {
+  color: white;
+  margin: 0;
+  font-size: 16px; /* Adjust phone number text size */
+  font-weight: bold; /* Make phone number bold */
+}
+
+.fa-phone {
+  animation: jump 1.5s infinite; /* Animation for the phone icon */
+}
+
+@keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* No movement at these keyframes */
+  }
+  40%, 60% {
+    transform: translateY(-10px); /* Jump up at these keyframes */
+  }
+}
+
+/* Default styles (for desktop view) */
+.phone-container i,
+.phone-container p,
+.dropbtn {
+  font-weight: normal; /* Reset font weight to normal for desktop */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .phone-call-section {
+    margin-top: 20px; /* Adjust spacing as needed */
+  }
+
+  .enquire-now-section {
+    margin-top: 20px; /* Adjust spacing as needed */
+  }
+
+  .phone-numbers {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .phone-container {
+    display: flex;
+    align-items: center;
+    margin-right: 15px; /* Adjust spacing between phone numbers */
+    margin-bottom: 10px; /* Adjust vertical spacing between phone numbers */
+  }
+
+  .phone-container i {
+    font-size: 20px;
+    padding-right: 10px;
+    font-weight: bold; /* Make icon bold */
+  }
+
+  .phone-container p {
+    color: aliceblue;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold; /* Make phone number bold */
+  }
+
+  .blink-button {
+    display: block; /* Ensure button spans full width */
+    text-align: center; /* Center align button */
+  }
+
+  .dropbtn {
+    color: rgb(16, 16, 204);
+    background-color: aliceblue;
+    border-radius: 20px;
+    border-color: rgb(41, 149, 243);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold; /* Make button text bold */
+    border: 2px solid transparent; /* Ensure button has a border */
+    outline: none; /* Remove default focus styling */
+    display: inline-block; /* Ensure button behaves correctly */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  }
+
+  .dropbtn:hover {
+    background-color: rgb(41, 149, 243);
+    color: white;
+  }
+}
+                                                                                                                                                                               
+
 </style>
   </head>
 
@@ -204,20 +360,17 @@ https://templatemo.com/tm-565-onix-digital
                   <li></li>
                 </ul>
               </li>
+              <li class="scroll-to-section dropdown">
+                <a href="#products">Contact us</a>
+                <ul class="dropdown-menu">
+                  <li><div style="display: flex;"><img src="./assets/images/logos/india (1).png" alt="" style="height: 30px; width: 35px;"><a href="tel:+00919605750005">00919605750005</a></div></li>
+                  <li> <div style="display: flex;"><img src="./assets/images/logos/dubi.png" alt="" style="height: 25px; width: 25px;"><a href="tel:+0097142996378">0097142996378 </a></div></li>
+                  
+                  <li></li>
+                </ul>
+              </li>
               <!-- <li class="scroll-to-section"><a href="#video">Videos</a></li> -->
-              <li class="scroll-to-section dropdown dropdown-123">
-                <a href="contact.html" class="dropbtn">Contact Us</a>
-                <div class="dropdown-content-123">
-                    <a href="tel:+00919605750005">
-                        <!-- <img src="path/to/flag1.png" alt="1"> -->
-                        00919605750005
-                    </a>
-                    <a href="tel:+0097142996378">
-                        <!-- <img src="path/to/flag2.png" alt="2"> -->
-                        0097142996378
-                    </a>
-                </div>
-            </li>
+            
               <li class="scroll-to-section">
                 <div class="main-red-button-hover">
                   <a href="tel:+971506556826"><i class="fa fa-phone"></i> Call Now </a>
@@ -294,7 +447,7 @@ https://templatemo.com/tm-565-onix-digital
     </div>
   </div>
 
-  <div id="services" class="our-services section">
+  <div id="services" class="our-services section" style="padding: 0px;">
     <div class="services-right-dec">
       <img src="assets/images/services-right-dec.png" alt="">
     </div>
@@ -505,26 +658,32 @@ https://templatemo.com/tm-565-onix-digital
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="owl-carousel owl-services">
-                          <div class="item">
+                          <div class="item" style="height: 300px;">
                             <h4>Innovative Solutions</h4>
                            <p> Tailored approaches using advanced technology and sustainable practices to meet industry challenges. </p>
                             
                           </div>
                           
-                          <div class="item">
+                          <div class="item" style="height: 300px;">
                             <h4>GermanQuality</h4>
                             
                             <p>Exemplary standards of precision, reliability, and craftsmanship synonymous with renowned German engineering.</p>
                           </div>
-                          <div class="item">
+                          <div class="item" style="height: 300px;">
                             <h4>Customer Support</h4>
                             
                             <p>Our dedicated team provides personalized assistance and reliable service to ensure  satisfaction for our valued customers.</p>
                           </div>
-                          <div class="item">
+                          <div class="item" style="height: 300px;">
                             <h4> CustomSolutions</h4>
                            
-                            <p>Expertly crafted services and products meticulously designed to meet your unique requirements and surpass industry standards.</p>
+                            <p>Exquisite services and products tailored to exceed industry standards, ensuring unmatched quality and customer satisfaction.
+
+
+
+
+
+                            </p>
                           </div>
                                       <!-- <div class="item">
                             <h4>See The Strategy In The Market</h4>
@@ -712,7 +871,7 @@ https://templatemo.com/tm-565-onix-digital
               </div>
               
                 <div class="main-blue-button-hover"style="display: flex; height: 50px;">
-                  <a href="./product.html">know more</a>
+                  <a href="product.html">know more</a>
                 </div>
            
           </div>
@@ -865,32 +1024,60 @@ https://templatemo.com/tm-565-onix-digital
 <div id="subscribe" class="subscribe">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-8 offset-lg-2">
+        <style>
+          .inner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+        </style>
+        
         <div class="inner-content">
-          <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-              <h2>Feel Free to contact us</h2>
-              <!-- <p style="color: aliceblue;">   Discover a comprehensive range of high-quality plastic raw materials at  OV Kunststoffe,. From versatile polymers to specialized compounds, our platform offers a diverse selection to meet industrial needs. Explore competitive pricing, reliable delivery, and expert support to streamline your sourcing process. Whether you're in manufacturing, construction, or packaging, find the perfect solution for your material requirements with us</p> -->
-            <div style="display: flex;">
-              <div class="col-lg-5 offset-lg-1 subscribe-newsletters">
-                <p style="color: aliceblue;"> If you have any questions or need further information, don't hesitate to reach out to us.</p>
-                <a href="./contact.html"><button type="submit" class="dropbtn" style="color: rgb(16, 16, 204); background-color: aliceblue; border-radius: 20px; border-color: rgb(41, 149, 243);">Enquire Now</button></a>
-            </div>
-            <div class="col-lg-5 offset-lg-1">
-              <p style="color: aliceblue;"> Call us on </p>
-              <a href="tel:00919605750005"><div style="display: flex;align-items: center;color: white;"><i class="fa fa-phone" style="padding-right: 10px;"></i><p style="color: white;">00919605750005</p></div></a>
-              <a href="tel: 0097142996378"><div style="display: flex;align-items: center;color: white;"><i class="fa fa-phone" style="padding-right: 10px;"></i><p style="color: white;"> 0097142996378</p></div></a>
-            </div> 
-          </div> 
+          <h2>Feel Free to contact us</h2>
+          <p style="color: aliceblue;">If you have any questions or need further information, don't hesitate to reach out to us.</p>
+          <div class="phone-call-section">
+            <p style="color: aliceblue;">Call us on:</p>
+            <div class="phone-numbers">
+              <a href="tel:00919605750005" class="phone-link">
+                <div class="phone-container">
+                  <i class="fa fa-phone"></i>
+                  <p>00919605750005</p>
+                </div>
+              </a>
+              
+              <a href="tel:0097142996378" class="phone-link">
+                <div class="phone-container">
+                  <i class="fa fa-phone"></i>
+                  <p>0097142996378</p>
+                </div>
+              </a>
             </div>
           </div>
+          <div class="enquire-now-section">
+            <a href="./contact.html" class="blink-button">
+              <button type="submit" class="dropbtn">Enquire Now</button>
+            </a>
+          </div>
         </div>
+        
       </div>
     </div>
   </div>
 </div>
 
- 
+ <style>
+  
+  /* Adjusting width for larger screens (PC) */
+@media (min-width: 992px) {
+  .col-lg-8 {
+    max-width: 800px; /* Adjust maximum width as per your requirement */
+  }
+}
+
+
+ </style>
 
   
 
@@ -1018,8 +1205,8 @@ https://templatemo.com/tm-565-onix-digital
         
         <div class="col-lg-3">
           <div class="subscribe-newsletters footer-item"> 
-            <a href="contact.html"><h4>Our Services</h4></a>
-            <p>Get our latest news and ideas to your inbox</p>
+            <a href="service.html"><h4>Our Services</h4></a>
+            <p>our services</p>
            <hr>
             <p>Get our latest news and ideas to your inbox</p>
             <form action="#" method="get">
