@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>OVkuniststoffe</title>
+    <title>OVkunststoffe</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -55,7 +55,7 @@ background-color: white;
 box-shadow: 0 16px 16px rgba(0,0,0,0.2);
 z-index: 1;
 width: 400px;
-height: 250px;
+height:auto;
 }
 
 .dropdown-menu li {
@@ -116,61 +116,66 @@ display: block;
 
 
     <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/ov-ku.png" style="width: 200px;">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="index.html">About</a></li>
-              <li class="scroll-to-section"><a href="service.html">Services</a></li>
-              <li class="scroll-to-section"><a href="brands.html">Brands</a></li>
-
-              <li class="scroll-to-section dropdown">
-                <a href="#products">Products</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./product.html#p1">Soundproof Pipe System </a></li>
-                  <li><a href="./product.html#p2">DWC Pipes And Machine Supply </a></li>
-                  <li><a href="./product.html#p3">Plastic Rubber Sealing System </a></li>
-                  <li><a href="./product.html#p4">Specialized Plastic Packaging </a></li>
-                  <li></li>
-                </ul>
-              </li>
-              <li class="scroll-to-section dropdown">
-                <a href="index.html">Contact us</a>
-                <ul class="dropdown-menu">
-                  <li><div style="display: flex;"><img src="./assets/images/logos/india (1).png" alt="" style="height: 30px; width: 35px;"><a href="tel:+00919605750005">00919605750005</a></div></li>
-                  <li> <div style="display: flex;"><img src="./assets/images/logos/dubi.png" alt="" style="height: 25px; width: 25px;"><a href="tel:+0097142996378">0097142996378 </a></div></li>
-                  
-                  <li></li>
-                </ul>
-              </li>
-              <!-- <li class="scroll-to-section"><a href="#video">Videos</a></li> -->
-            
-              <li class="scroll-to-section">
-                <div class="main-red-button-hover">
-                  <a href="tel:+971506556826"><i class="fa fa-phone"></i> Call Now </a>
-                </div>
-              </li>
-            </ul>
-            
-            
-            <a class='menu-trigger'>
+    <header id="navbar" class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="assets/images/ov-ku.png" style="width: 200px;">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section"><a href="index.html" >Home</a></li>
+                <li class="scroll-to-section"><a href="index.html">About</a></li>
+                <li class="scroll-to-section"><a href="service.html">Services</a></li>
+                <li class="scroll-to-section"><a href="brands.html">Brands</a></li>
+                <li class="scroll-to-section dropdown">
+                  <a href="#products">Products</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="./product.html#p1">Soundproof Pipe System</a></li>
+                    <li><a href="./product.html#p2">DWC Pipes And Machine Supply</a></li>
+                    <li><a href="./product.html#p3">Plastic Rubber Sealing System</a></li>
+                    <li><a href="./product.html#p4">Specialized Plastic Packaging</a></li>
+                    <li></li>
+                  </ul>
+                </li>
+                <li class="scroll-to-section dropdown">
+                  <a href="contact.html"class="active">Contact us</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div style="display: flex;">
+                        <img src="./assets/images/logos/india (1).png" alt="" style="height: 30px; width: 35px;">
+                        <a href="tel:+00919605750005">00919605750005</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div style="display: flex;">
+                        <img src="./assets/images/logos/dubi.png" alt="" style="height: 25px; width: 25px;">
+                        <a href="tel:+0097142996378">0097142996378</a>
+                      </div>
+                    </li>
+                    <li></li>
+                  </ul>
+                </li>
+                <!-- <li class="scroll-to-section"><a href="#video">Videos</a></li> -->
+                <li class="scroll-to-section">
+                  <div class="main-red-button-hover">
+                    <a href="tel:+971506556826"><i class="fa fa-phone"></i> Call Now</a>
+                  </div>
+                </li>
+              </ul>
+              <a class='menu-trigger'>
                 <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Banner Start ***** -->
@@ -196,7 +201,7 @@ display: block;
               <h2>Feel free to <em>Contact</em> us </h2>
               <div id="map">
                 <h2>DUBAI</h2>
-                <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16880287.28292563!2d46.58624703271439!3d23.899098395921268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5df4fd6dc465%3A0x4ffc502d7499088c!2sEmirates%20Post%20-%20Al%20Rashidiyah%20Post%20Office!5e0!3m2!1sen!2sin!4v1720591005514!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div class="info align-self-center" style="width:100%; padding: 20px 0 20px 0;">
                 <div>
@@ -256,9 +261,9 @@ display: block;
               </div>
             </form>
             <!-- New map section starts here -->
-            <div id="new-map" style="width: 100%; padding-top: 20px;">
+            <div id="map" style="">
               <h2>KERALA</h2>
-              <iframe src="https://maps.google.com/maps?q=Kerala,+India&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7697.040957506026!2d76.18401249522651!3d10.533451109038614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ef71966a5caf%3A0xf66e49ad8f37d2ce!2sV%20STUDIO!5e0!3m2!1sen!2sin!4v1720591138500!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!-- New map section ends here -->
           </div>
