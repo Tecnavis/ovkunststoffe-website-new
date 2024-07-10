@@ -1831,7 +1831,7 @@ footer {
 footer .footer-item h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #2a2a2a;
+  color: #110f0f;
   margin-bottom: 30px;
 }
 
@@ -1841,7 +1841,7 @@ footer .about .logo img {
 }
 
 footer .about a {
-  color: #afafaf;
+  color: #161414;
   font-weight: 300;
 }
 
@@ -1881,7 +1881,7 @@ footer .footer-item ul li:last-child {
 
 footer .footer-item ul li a {
   font-size: 15px;
-  color: #afafaf;
+  color: #080707;
   transition: all .3s;
 }
 
@@ -1891,7 +1891,7 @@ footer .footer-item ul li a:hover {
 
 footer .footer-item p {
   font-size: 15px;
-  color: #afafaf;
+  color: #0d0c0c;
   margin-top: -5px;
 }
 
@@ -1929,7 +1929,7 @@ footer .footer-item form button {
 footer .copyright p {
   text-align: center;
   border-top: 1px solid #eee;
-  color: #afafaf;
+  color: #0a0909;
   margin-top: 50px;
   padding: 20px 0px;
   font-weight: 300;
