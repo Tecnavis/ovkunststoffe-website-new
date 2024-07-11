@@ -27,21 +27,34 @@
             background-image: url('./assets/images/25489\ [Converted].png');
             background-size: cover;
             background-repeat: no-repeat;
-            color: rgb(255, 255, 255);
+            color: rgb(21, 19, 19);
             padding: 150px 0; /* Adjusted padding to make sure it is not under the nav bar */
             text-align: center;
             height: 600px;
+           
         }
         .banner h1 {
             font-size: 3.5em; /* Increased font size */
-            margin-bottom: 20px;
+            margin-bottom: 0px;
+            margin-top: 70px;
         }
         .banner p {
             font-size: 1.2em;
         }
 
 
-/* Add this CSS to your stylesheet */
+/* Media query for mobile phones */
+@media (max-width: 767px) {
+    .banner h1 {
+        font-size: 3em; /* Adjust the size as needed */
+        margin-top: 150px; /* Adjust the margin as needed */
+        
+    }
+    .contact-us section{
+      padding: 0px;
+    }
+}
+
 .nav li {
 position: relative;
 }
@@ -129,11 +142,11 @@ display: block;
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
                 <li class="scroll-to-section"><a href="index.html" >Home</a></li>
-                <li class="scroll-to-section"><a href="index.html">About</a></li>
+                <!-- <li class="scroll-to-section"><a href="index.html">About</a></li> -->
                 <li class="scroll-to-section"><a href="service.html">Services</a></li>
                 <li class="scroll-to-section"><a href="brands.html">Brands</a></li>
                 <li class="scroll-to-section dropdown">
-                  <a href="#products">Products</a>
+                  <a href="product.html">Products</a>
                   <ul class="dropdown-menu">
                     <li><a href="./product.html#p1">Soundproof Pipe System</a></li>
                     <li><a href="./product.html#p2">DWC Pipes And Machine Supply</a></li>
@@ -193,7 +206,7 @@ display: block;
 
 
 
-    <div id="contact" class="contact-us section">
+    <div id="contact" class="contact-us section" style="padding: 0%;">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
@@ -207,7 +220,7 @@ display: block;
                 <div>
                   <h2>DUBAI</h2>
                 </div>
-                <div style="display: inline-flex;">
+                <div style="display: inline-flex;" class="col-md-12">
                   <span><i class="fa fa-phone"></i> <a href="tel:+97142996378">+971 42 996 378</a></span>
                   <span style="padding-left: 10px;"><i class="fa fa-phone"></i> <a href="tel:971 050 655 6826">+971 50 655 6826</a></span>
                   <span style="padding-left: 20px;"><i class="fa fa-map-marker"></i> <a href="#"> Post box 77157,<br> Ummul Ramoul, <br>Rashidiya Office No 5,<br> Dubai UAE</a></span>
