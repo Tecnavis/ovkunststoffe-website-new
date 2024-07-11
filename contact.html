@@ -41,19 +41,14 @@
         .banner p {
             font-size: 1.2em;
         }
-
-
-/* Media query for mobile phones */
-@media (max-width: 767px) {
-    .banner h1 {
-        font-size: 3em; /* Adjust the size as needed */
-        margin-top: 150px; /* Adjust the margin as needed */
-        
-    }
-    .contact-us section{
-      padding: 0px;
-    }
+.location_card{
+  display: inline-flex;
+  align-items: none;
+  justify-content: none;
+  flex-direction: none;
 }
+
+
 
 .nav li {
 position: relative;
@@ -115,6 +110,23 @@ display: block;
   position: relative;
               }
 
+/* Media query for mobile phones */
+@media (max-width: 767px) {
+    .banner h1 {
+        font-size: 3em; /* Adjust the size as needed */
+        margin-top: 150px; /* Adjust the margin as needed */
+        
+    }
+    .contact-us section{
+      padding: 0px;
+    }
+    .location_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+}
 </style>
 </head>
 
@@ -220,7 +232,7 @@ display: block;
                 <div>
                   <h2>DUBAI</h2>
                 </div>
-                <div style="display: inline-flex;" class="col-md-12">
+                <div   class="location_card ">
                   <span><i class="fa fa-phone"></i> <a href="tel:+97142996378">+971 42 996 378</a></span>
                   <span style="padding-left: 10px;"><i class="fa fa-phone"></i> <a href="tel:971 050 655 6826">+971 50 655 6826</a></span>
                   <span style="padding-left: 20px;"><i class="fa fa-map-marker"></i> <a href="#"> Post box 77157,<br> Ummul Ramoul, <br>Rashidiya Office No 5,<br> Dubai UAE</a></span>
@@ -230,7 +242,7 @@ display: block;
                 <div>
                   <h2>KERALA</h2>
                 </div>
-                <div style="display: inline-flex;">
+                <div class="location_card">
                   <span><i class="fa fa-phone"></i> <a href="tel:+919544052717">+91 954 405 2717</a></span>
                   <span style="padding-left: 10px;"><i class="fa fa-phone"></i> <a href="tel:+919605750005">+91 960 575 0005</a></span>
                   <span style="padding-left: 20px;"><i class="fa fa-map-marker"></i> <a href="#">V studio Ayyanthole,<br> Trichur 680003<br>Kerala, India</a></span>
